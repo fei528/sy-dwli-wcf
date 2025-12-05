@@ -13,13 +13,13 @@ We propose innovations in two key aspects: **State Estimation (Motion Modeling)*
 ### 1\. Motion Model Optimization 
 
   
-  * [cite_start]**Dynamic-Weight Linear Interpolation (DWLI):** A novel interpolation method that assigns adaptive weights to position and scale dimensions independently, effectively repairing trajectory breaks caused by non-linear deformation[cite: 263].
+  * **Dynamic-Weight Linear Interpolation (DWLI):** A novel interpolation method that assigns adaptive weights to position and scale dimensions independently, effectively repairing trajectory breaks caused by non-linear deformation.
 
 ### 2\. Weak Cue Association Strategy 
 
-  * [cite_start]**Height-Modulated IoU (HMIoU):** Leveraging the observation that object **height** is more stable than width during occlusion, we introduce HMIoU to enhance association robustness in crowded scenes[cite: 355].
-  * [cite_start]**Confidence State Tracking (CST):** We incorporate detection confidence and its rate of change into the state vector, utilizing the temporal continuity of confidence to assist tracking during occlusion or detector degradation[cite: 367].
-  * [cite_start]**Pseudo-Depth Association (PDA):** Utilizing the geometric prior of monocular perspective ("near is low, far is high"), we construct a pseudo-depth feature to resolve depth ambiguities for targets with similar appearances[cite: 387].
+  * **Height-Modulated IoU (HMIoU):** Leveraging the observation that object **height** is more stable than width during occlusion, we introduce HMIoU to enhance association robustness in crowded scenes.
+  * **Confidence State Tracking (CST):** We incorporate detection confidence and its rate of change into the state vector, utilizing the temporal continuity of confidence to assist tracking during occlusion or detector degradation.
+  * **Pseudo-Depth Association (PDA):** Utilizing the geometric prior of monocular perspective ("near is low, far is high"), we construct a pseudo-depth feature to resolve depth ambiguities for targets with similar appearances.
 
 ## Benchmark Results
 
