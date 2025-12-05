@@ -1,11 +1,3 @@
-\<div align="center"\>
-\<p\>
-\<a href="[https://github.com/fei528/sy-dwli-wcf](https://github.com/fei528/sy-dwli-wcf)"\>\<img src="[https://img.shields.io/badge/Github-Code-blue](https://www.google.com/search?q=https://img.shields.io/badge/Github-Code-blue)" alt="Github Code"\>\</a\>
-\<a href="\#"\>\<img src="[https://img.shields.io/badge/Paper-Thesis-green](https://www.google.com/search?q=https://img.shields.io/badge/Paper-Thesis-green)" alt="Paper"\>\</a\>
-\<a href="\#"\>\<img src="[https://img.shields.io/badge/Task-MOT-red](https://www.google.com/search?q=https://img.shields.io/badge/Task-MOT-red)" alt="Task"\>\</a\>
-\</p\>
-\</div\>
-
 ## Introduction
 
 This repository contains the official implementation of thesis **"Improving Multi-Object Tracking Robustness with Adaptive Interpolation and Weak Cue Integration"**.
