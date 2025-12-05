@@ -1,0 +1,63 @@
+MotChallenge2DBox
+new_kf_gpr_new_post
+Traceback (most recent call last):
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/eval.py", line 99, in evaluate
+    res[curr_seq] = eval_sequence(
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/eval.py", line 263, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 406, in get_preprocessed_seq_data
+    self._check_unique_ids(raw_data)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/datasets/_base_dataset.py", line 362, in _check_unique_ids
+    raise TrackEvalException(exc_str)
+trackeval.utils.TrackEvalException: Tracker predicts the same ID more than once in a single timestep (seq: MOT17-02-FRCNN, frame: 1, ids: 3 4 5 6 7 8 9 11 12 14 15 16 18 19 20 21 22 23 24 25 26)
+
+
+
+
+
+MotChallenge2DBox
+new_kf_gpr_new_post
+Traceback (most recent call last):
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/eval.py", line 99, in evaluate
+    res[curr_seq] = eval_sequence(
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/eval.py", line 263, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 406, in get_preprocessed_seq_data
+    self._check_unique_ids(raw_data)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/datasets/_base_dataset.py", line 362, in _check_unique_ids
+    raise TrackEvalException(exc_str)
+trackeval.utils.TrackEvalException: Tracker predicts the same ID more than once in a single timestep (seq: MOT17-02-FRCNN, frame: 1, ids: 3 4 5 6 7 8 9 11 12 14 15 16 18 19 20 21 22 23 24 25 26)
+
+
+
+
+
+MotChallenge2DBox
+ganct_cw_adaptive
+Traceback (most recent call last):
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/eval.py", line 99, in evaluate
+    res[curr_seq] = eval_sequence(
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/eval.py", line 263, in eval_sequence
+    data = dataset.get_preprocessed_seq_data(raw_data, cls)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/_timing.py", line 17, in wrap
+    result = f(*args, **kw)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/datasets/mot_challenge_2d_box.py", line 406, in get_preprocessed_seq_data
+    self._check_unique_ids(raw_data)
+  File "/workspace/Deep-OC-SORT/external/TrackEval/trackeval/datasets/_base_dataset.py", line 362, in _check_unique_ids
+    raise TrackEvalException(exc_str)
+trackeval.utils.TrackEvalException: Tracker predicts the same ID more than once in a single timestep (seq: dancetrack0004, frame: 48, ids: 1)
+
+
+
+
+

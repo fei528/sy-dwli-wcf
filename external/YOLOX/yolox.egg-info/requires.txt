@@ -1,0 +1,13 @@
+loguru
+ninja
+numpy
+onnx
+onnx-simplifier
+onnxruntime
+opencv_python
+pycocotools>=2.0.2
+tabulate
+thop
+torch>=1.7
+torchvision
+tqdm

@@ -1,0 +1,16 @@
+Cython
+Pillow
+flake8
+future
+gdown
+h5py
+imageio
+isort==4.3.21
+matplotlib
+numpy
+opencv-python
+scipy
+six
+tb-nightly
+yacs
+yapf
