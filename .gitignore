@@ -1,7 +1,6 @@
 
 data/
 deep-cache.gz
-results/
 external/weights/
 cache/embeddings/
 cache/det_bytetrack_ablation.pkl
