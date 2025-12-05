@@ -6,20 +6,28 @@ Multi-object tracking (MOT) in complex dynamic scenarios—such as **DanceTrack*
 
 Our approach significantly improves robustness against non-linear motion and occlusion, achieving state-of-the-art performance on **DanceTrack**, **MOT17**, and **MOT20** benchmarks among non-transformer methods.
 
-## Key Features
+
+
+-----
+
+## 💡 Technical Deep Dive: Algorithm Implementation
 
 We propose innovations in two key aspects: **State Estimation (Motion Modeling)** and **Data Association**.
 
-### 1\. Motion Model Optimization 
 
-  
-  * **Dynamic-Weight Linear Interpolation (DWLI):** A novel interpolation method that assigns adaptive weights to position and scale dimensions independently, effectively repairing trajectory breaks caused by non-linear deformation.
+### 1\. Motion Model Optimization (Kalman Filter Modifications)
 
-### 2\. Weak Cue Association Strategy 
+  * **Dynamic-Weight Linear Interpolation (DWLI):** This interpolation method is applied during **track recovery** (after a short occlusion or miss). Unlike standard linear interpolation, DWLI assigns a **dynamic, unequal weight** (based on track confidence and age) separately to the position components ($x, y$) and the scale components ($w, h$) during trajectory smoothing.
 
-  * **Height-Modulated IoU (HMIoU):** Leveraging the observation that object **height** is more stable than width during occlusion, we introduce HMIoU to enhance association robustness in crowded scenes.
-  * **Confidence State Tracking (CST):** We incorporate detection confidence and its rate of change into the state vector, utilizing the temporal continuity of confidence to assist tracking during occlusion or detector degradation.
-  * **Pseudo-Depth Association (PDA):** Utilizing the geometric prior of monocular perspective ("near is low, far is high"), we construct a pseudo-depth feature to resolve depth ambiguities for targets with similar appearances.
+### 2\. Weak Cue Association Strategy (Cost Matrix Fusion)
+
+These modules are integrated into the association stage to increase robustness when primary cues (IoU, appearance) are ambiguous:
+
+  * **Height-Modulated IoU (HMIoU):** This method modulates the standard IoU cost based on the **relative stability of the target's height**. Height change is generally slower than width change in non-rigid motion. The HMIoU cost function incorporates this height factor to prioritize stable vertical scale matches.
+  * **Confidence State Tracking (CST):** The track's **detection confidence** is modeled as a state input. This allows the association cost to factor in the temporal stability of the detector's score, assisting in tracking through brief periods of weak detection or clutter.
+  * **Pseudo-Depth Association (PDA):** The cost matrix integrates a feature derived from the bounding box's **vertical position** ($y$-coordinate). This "pseudo-depth" leverages the ground plane prior ("objects lower on the screen are closer") to break ties in crowded, low-perspective scenes.
+
+-----
 
 ## Benchmark Results
 
@@ -53,6 +61,20 @@ We propose innovations in two key aspects: **State Estimation (Motion Modeling)*
 | Deep OC-SORT | 64.9 | 80.6 | 65.9 | 79.4 |
 | **Ours** | **65.0** | **80.8** | **67.5** | **76.1** |
 
+
+
+
+
+## 💻 Dependencies and Requirements
+
+To ensure full reproducibility, please install the following environment components:
+
+| Component | Recommended Version | Note |
+|:---|:---|:---|
+| **Python** | 3.8+ | |
+| **PyTorch** | 1.10.1 | Tested with CUDA 11.3 |
+| **CUDA** | 11.3 / 11.8 | Requires GPU for running YOLOX detector |
+| **OS** | Linux (e.g., Ubuntu 20.04) | |
 
 ## Installation
 
