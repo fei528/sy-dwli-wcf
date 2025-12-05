@@ -18,12 +18,12 @@ Our approach significantly improves robustness against non-linear motion and occ
 
 We propose innovations in two key aspects: **State Estimation (Motion Modeling)** and **Data Association**.
 
-### 1\. Motion Model Optimization (Chapter 3)
+### 1\. Motion Model Optimization 
 
   
   * [cite_start]**Dynamic-Weight Linear Interpolation (DWLI):** A novel interpolation method that assigns adaptive weights to position and scale dimensions independently, effectively repairing trajectory breaks caused by non-linear deformation[cite: 263].
 
-### 2\. Weak Cue Association Strategy (Chapter 4)
+### 2\. Weak Cue Association Strategy 
 
   * [cite_start]**Height-Modulated IoU (HMIoU):** Leveraging the observation that object **height** is more stable than width during occlusion, we introduce HMIoU to enhance association robustness in crowded scenes[cite: 355].
   * [cite_start]**Confidence State Tracking (CST):** We incorporate detection confidence and its rate of change into the state vector, utilizing the temporal continuity of confidence to assist tracking during occlusion or detector degradation[cite: 367].
