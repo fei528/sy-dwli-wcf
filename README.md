@@ -153,6 +153,11 @@ python3 tools/track.py --benchmark mot20 --eval --exp_name mot20_exp --fp16 --fu
 ```
 
 
+### 📢 Citation Request
+
+To ensure the transparency and reproducibility of this research, we urge any reader using this code or any work derived from it to **cite this forthcoming paper in any work using this code (even if it is currently in submission status)** (citation information will be updated after formal publication). Your citations will greatly support our academic research and future development.
+
+
 
 ## Acknowledgement
 
