@@ -3,5 +3,4 @@ data/
 deep-cache.gz
 external/weights/
 cache/embeddings/
-cache/*.pkl
-cache/*.npy
+
