@@ -3,7 +3,5 @@ data/
 deep-cache.gz
 external/weights/
 cache/embeddings/
-cache/det_bytetrack_ablation.pkl
-cache/det_bytetrack_x_mot17.pkl
-cache/det_bytetrack_x_mot20.pkl
-cache/det_ocsort_dance_model.pkl
+cache/*.pkl
+cache/*.npy
