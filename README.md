@@ -1,3 +1,13 @@
+
+### Permanent Resource Links (DOI)
+
+To facilitate experimental reproduction, the source code supporting this paper has been deposited in Zenodo and assigned a permanent Digital Object Identifier (DOI).
+
+| Resource Type | Hosting Platform | Permanent Link (DOI) |
+|:---|:---|:---|
+| **Source Code** | Zenodo | [https://doi.org/10.5281/zenodo.17837164](https://doi.org/10.5281/zenodo.17837164) |
+---
+
 ---
 ## 📄 Publication and Code Status
 
