@@ -13,7 +13,7 @@ To facilitate experimental reproduction, the source code supporting this paper h
 
 ## Introduction
 
-This repository contains the official implementation of thesis **"Enhancing Multi-Object Tracking via Dynamic-Weight Linear Interpolation and Weak Clue Fusion"**.
+This repository contains the official implementation of manuscript **"Enhancing Multi-Object Tracking via Dynamic-Weight Linear Interpolation and Weak Clue Fusion"**.
 
 Multi-object tracking (MOT) in complex dynamic scenarios—such as **DanceTrack**—faces significant challenges, including **non-rigid motion**, **weak spatial cues**, and **appearance homogenization** (unified appearance). Built upon the strong baseline of [Deep-OC-SORT](https://github.com/GerardMaggiolino/Deep-OC-SORT), this project introduces a robust tracking framework that integrates a **Motion Optimization Module** and a **Weak-Cue Fusion Association Strategy**.
 
