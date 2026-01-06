@@ -9,9 +9,7 @@ To facilitate experimental reproduction, the source code supporting this paper h
 ---
 
 ---
-## 📄 Publication and Code Status
 
-**The methods and experimental results in this repository are directly related to the academic paper titled "Improving Multi-Object Tracking Robustness with Adaptive Interpolation and Weak Cue Integration," which has been submitted to The Visual Computer journal.**
 
 ## Introduction
 
